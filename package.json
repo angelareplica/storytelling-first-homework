@@ -5,10 +5,10 @@
   "main": "01-chart.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint --fix *.js",
-    "prettier": "prettier --write *.js",
-    "parcel": "parcel index.html",
-    "build": "parcel build index.html"
+    "lint": "eslint --fix src/*.js",
+    "prettier": "prettier --write src/*.js",
+    "parcel": "parcel src/index.html",
+    "build": "parcel build src/index.html"
   },
   "author": "",
   "license": "ISC",
