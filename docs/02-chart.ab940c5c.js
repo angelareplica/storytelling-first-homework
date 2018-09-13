@@ -27621,7 +27621,7 @@ function _interopRequireWildcard(obj) { if (obj && obj.__esModule) { return obj;
   }).attr('fill', function (d) {
     return colorScale(d.continent);
   });
-})(); /* global d3 */
+})();
 },{"d3":"../node_modules/d3/index.js"}],"../../../../.npm-global/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -27651,7 +27651,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = '' || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + '52127' + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + '58507' + '/');
   ws.onmessage = function (event) {
     var data = JSON.parse(event.data);
 
