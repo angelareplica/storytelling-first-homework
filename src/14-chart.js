@@ -28,7 +28,7 @@
   var xPositionScale = d3.scaleBand()
     .range([0, width])
 
-  d3.csv('eating-data.csv')
+  d3.csv(require('./eating-data.csv'))
     .then(ready)
     .catch(function (err) {
       console.log('Failed with', err)

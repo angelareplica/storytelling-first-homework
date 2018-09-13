@@ -103,7 +103,9 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   // Override the current require with this new one
   return newRequire;
-})({"14-chart.js":[function(require,module,exports) {
+})({"eating-data.csv":[function(require,module,exports) {
+module.exports = "storytelling-first-homework/eating-data.a475123a.csv";
+},{}],"14-chart.js":[function(require,module,exports) {
 /* global d3 */
 
 (function () {
@@ -125,7 +127,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
 
   var xPositionScale = d3.scaleBand().range([0, width]);
 
-  d3.csv('eating-data.csv').then(ready).catch(function (err) {
+  d3.csv(require('./eating-data.csv')).then(ready).catch(function (err) {
     console.log('Failed with', err);
   });
 
@@ -155,7 +157,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
     svg.append('g').attr('class', 'axis x-axis').attr('transform', 'translate(0,' + height + ')').call(xAxis);
   }
 })();
-},{}],"../../../../.npm-global/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+},{"./eating-data.csv":"eating-data.csv"}],"../../../../.npm-global/lib/node_modules/parcel/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 
